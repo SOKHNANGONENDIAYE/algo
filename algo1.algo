@@ -1,0 +1,36 @@
+ALGORITHME algo1
+VAR
+ set1: ARRAY_OF_INTEGER[]
+ set2: ARRAY_OF_INTEGER[]
+ set3: ARRAY_OF_INTEGER[]
+ i,j,k,n,sum
+ BEGIN
+ k=0;
+ FOR i FROM 0 TO set1.length DO 
+   FOR j FROM 0 TO set2.length DO 
+   IF (set1[i]=set2[j]) THEN
+    n:=n+1; \\ si n>0 alorsl element est present dans les deux set 
+   END_IF
+   END_FOR
+   IF (N=0) THEN 
+    set3[K]:=set1[i]
+    k:=k+1;
+    END_IF
+  END_FOR
+   n:=0;
+
+  \\ faire la somme des lements de set3
+  sum :=0;
+ FOR i FROM 0 TO set3.length DO 
+  sum:=sum+set[K]
+ END_FOR
+ write('la somme des element de set3 est:')
+ write(sum)
+
+Ecrire "Entrez une phras : "
+Lire phrase
+
+
+Ecrire "Cette phrase compte ", Nb + 1, " mots"
+Ecrire "Cette phrase compte ", Nb, " voyelles"
+Fin
